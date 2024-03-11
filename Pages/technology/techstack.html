@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code-Fun</title>
+  <link rel="stylesheet" href="teckstack.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+  <style>  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+  }
+  
+  .footer h5 {
+    margin-bottom: 30px;
+    color: #ffffff;
+  }
+  
+  .footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  .footer ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer address {
+    margin-top: 20px;
+    font-style: normal;
+  }
+</style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Programming Languages & Development Tools Graphs</h1>
+  <p>Explore a variety of programming languages and designing tools</p>
+</div>
+  <div class="container">
+    <section class="section">
+      <div class="chart-container">
+        <h2>Programming Languages Distribution (Bar Graph)</h2>
+        <canvas id="programmingLangBarChart"></canvas>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+              <h2>C Programming Language</h2>
+              <p>C is a procedural programming language.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+              <h2>C++ Programming Language</h2>
+              <p>C++ is an object-oriented programming language.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-content">
+              <h2>Python Programming Language</h2>
+              <p>Python is a high-level programming language.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-content">
+              <h2>Java Programming Language</h2>
+              <p>Java is a versatile programming language.</p>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-content">
+              <h2>Rust Programming Language</h2>
+              <p>Rust is a systems programming language.</p>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+            <h2>Go Programming Language</h2>
+            <p>Go is a systems programming language.</p>
+        </div>
+    </div>
+
+        <!-- Add other programming language cards here -->
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="chart-container">
+        <h2>Designing Tools Distribution (Line Graph)</h2>
+        <canvas id="designingToolsLineGraph"></canvas>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+              <h2>Figma</h2>
+              <p>Figma is a collaborative interface design tool.</p>
+          </div>
+        </div>
+        <!-- Add other designing tool cards here -->
+        <div class="card">
+          <div class="card-content">
+              <h2>Canva</h2>
+              <p>Canva is a graphic design platform.</p>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+            <h2>Adobe XD</h2>
+            <p>Adobe is a photo design platform.</p>
+        </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+          <h2>Sketch</h2>
+          <p>Sketch is a photo design platform.</p>
+      </div>
+  </div>
+  <div class="card">
+    <div class="card-content">
+        <h2>Proto.io</h2>
+        <p>Proto.io is a photo design platform.</p>
+    </div>
+</div>
+<div class="card">
+  <div class="card-content">
+      <h2>InVision</h2>
+      <p>Adobe is a photo design platform.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="card-content">
+      <h2>Zeplin</h2>
+      <p>Zeplin is a photo design platform.</p>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="chart-container">
+        <h2>Web Development Tech Stacks (Pie Chart)</h2>
+        <canvas id="webTechPieChart"></canvas>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+              <h2>HTML, CSS, JavaScript</h2>
+              <p>HTML, CSS, and JavaScript are fundamental technologies for web development.</p>
+          </div>
+        </div>
+        <!-- Add other web development tech stack cards here -->
+         <div class="card">
+            <div class="card-content">
+                <h2>React</h2>
+                <p>React is a JavaScript library for building user interfaces.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Angular</h2>
+                <p>Angular is a TypeScript-based web application framework.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h2>Next.js</h2>
+                <p>Next.js is a React framework for production.</p>
+            </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+              <h2>Vue.js</h2>
+              <p>Vue.js is a React framework for production.</p>
+          </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+            <h2>Node.js</h2>
+            <p>Node.js is a Javascript framework for production.</p>
+        </div>
+    </div>
+      </div>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>About Us</h5>
+                <p>We are dedicated to providing high-quality online education to learners worldwide.</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <address>
+                    <strong>Code-Fun</strong><br>
+                    123 Main Street<br>
+                    City, Country<br>
+                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                </address>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">© 2024 eLearning Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<script src="teckstack.js"></script>
+
+
+</body>
+
+</html>
